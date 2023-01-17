@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7B7B7B29;
+}
+.header{
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    padding-left:100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+span{
+    color: #00A5EC;
+}
+.container1{
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
+    position: relative;
+}
+.addtaskcontainer{
+    height:50px;
+    width: 170px;
+    position: absolute;
+    left: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container2{
+    margin-top: 100px;
+}
+.boxcontainer{
+    height: 1000px;
+    width: 83%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:auto;
+    gap: 10px;
+    align-content: flex-start;
+}
+.box{
+    height: 310px;
+    width: 280px;
+    background-color: #FFFFFF;
+    border: 2px solid #67676729;
+    border-radius: 10px;
+}
+.box:hover{
+    box-shadow: 5px 5px 10px 10px #67676729;
+    cursor: pointer;
+}
+h3{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #00A5EC;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: medium;
+}
+#checkbox1,#checkbox3,#checkbox5,#checkbox7,#checkbox9{
+    appearance: none;
+    background-color: #C2C2C2;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-image: url(./check.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#checkbox2,#checkbox4,#checkbox6,#checkbox8,#checkbox10{
+    appearance: none;
+    background-color: #EDEDED;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.checkbox{
+    margin: 20px;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+
+.linethrough{
+    text-decoration: line-through;
+    color: #C2C2C2;
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+.checkboxtextcenter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.addnewtaskbox{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    cursor: pointer;
+}
+h2{
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 550;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+input[type="text"]{
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    border: 2px solid #F7F7F7;
+    height: 35px;
+    width: 360px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button{
+    background-color: #00A5EC;
+    border: none;
+    border-radius: 3px;
+    height: 35px;
+    width: 120px;
+    color: white;
+    position: absolute;
+    top: 135px;
+    left: 260px;
+    cursor: pointer;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    color: #858585;
+}
+.overlay{
+    width: 100%;
+    height: 900px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+}
+.backcontainer{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.addtaskcontainer2{
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.addtaskandgoback{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+}
+.box2{
+    background-color: #FFFFFF;
+    border: 2px solid #67676729;
+    border-radius: 10px;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    margin-left:450px;
+    margin-top: 40px;
+}
+.checkbox2{
+    margin: 20px;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+.checkboxtextcenter2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.box2 h3{
+    font-size: larger;
+    font-weight: 580;
+}
+@media screen and (min-width: 300px) and (max-width: 450px){
+    .header{
+        width: 1200px;
+        height: 180px;
+        padding-left: 30px;
+        padding-top: 40px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    .addtaskcontainer{
+        left: 500px;
+        margin-top: 100px;
+    }
+    #circleplus{
+        height: 150px;
+        width: 150px;
+    }
+    #addtasktext{
+        display: none;
+    }
+    .boxcontainer{
+        height: 730px;
+        margin-top: 200px;
+        display: block;
+    }
+    .box{
+        height: 1075px;
+        width: 1075px;
+        border-radius: 25px;
+        margin-top: 40px;
+    }
+    .box h3{
+        font-weight: 580;
+        font-size: 70px;
+        margin-left: 70px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .checkbox{
+        margin-left: 80px;
+        font-size: 70px;
+        line-height: 170px;
+    }
+    #checkbox1,#checkbox3,#checkbox5,#checkbox7,#checkbox9{
+        height: 80px;
+        width: 80px;
+        border-radius: 13px;
+    }
+    .checkboxtextcenter{
+        gap: 50px;
+    }
+    #checkbox2,#checkbox4,#checkbox6,#checkbox8,#checkbox10{
+        height: 80px;
+        width: 80px;
+        border-radius: 13px;
+    }
+    .overlay{
+        width: 1200px;
+        height: 6000px;
+    }
+    .addnewtaskbox{
+        top: 750px;
+        left: 50px;
+        width: 1100px;
+        height: 800px;
+        border-radius: 30px;
+        font-size: 50px;
+    }
+    .addnewtaskbox h2{
+        padding: 45px;
+    }
+    input[type=text]{
+        height: 150px;
+        width: 1000px;
+        margin-top: 110px;
+        margin-left: 50px;
+        font-size: 55px;
+        padding-left: 40px;
+        border-radius: 25px;
+    }
+    button{
+        top: 550px;
+        left: 490px;
+        height: 160px;
+        width: 550px;
+        border-radius: 15px;
+        font-size: 55px;
+    }
+    .close img{
+        height: 80px;
+        width: 80px;
+    }
+    .close{
+        left: 950px;
+        top: 50px;
+    }
+    .addtaskandgoback{
+        margin-top: 80px;
+        margin-left: 350px;
+    }
+    .backcontainer{
+        font-size: 55px;
+    }
+    .backcontainer img{
+        height: 130px;
+        width: 130px;
+    }
+    .box2{
+        margin-left: 80px;
+        margin-top: 100px;
+        height: 1000px;
+        width: 1050px;
+        border-radius: 25px;
+    }
+    .box2 h3{
+        font-weight: 580;
+        font-size: 70px;
+        margin-left: 0px;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .checkbox2{
+        margin-left: 80px;
+        font-size: 70px;
+        line-height: 170px;
+    }
+    .checkboxtextcenter2{
+        gap: 50px;
+    }
+    .boxcontainer2{
+        height: 6000px;
+    }
+}
